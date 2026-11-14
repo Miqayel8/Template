@@ -343,6 +343,11 @@ main {
         gap: 25px;
     }
 
+    .hero-content {
+        max-width: 450px;
+        gap: 25px;
+    }
+
     .hero-text h1 {
         line-height: 44px;
         font-size: 36px;
@@ -357,9 +362,6 @@ main {
         padding: 10px 28px;
     }
 
-    .hero-content {
-        max-width: 450px;
-    }
 
     .hero-img {
         width: 300px;
@@ -373,6 +375,7 @@ main {
 
     .hero-content {
         z-index: 1;
+        gap: 20px;
     }
 
     .hero-content a {
@@ -399,31 +402,35 @@ main {
     }
 }
 
-.clients{
+.clients {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 144px;
     gap: 16px;
 }
-.clinets-text{
+
+.clinets-text {
     display: flex;
     flex-direction: column;
     text-align: center;
     max-width: 1110px;
     gap: 8px;
 }
-.clinets-text h2{
+
+.clinets-text h2 {
     font-size: 36px;
     line-height: 44px;
     color: #4D4D4D;
 }
-.clinets-text p{
+
+.clinets-text p {
     font-size: 16px;
     line-height: 24px;
     color: #717171;
 }
-.clients-logobar{
+
+.clients-logobar {
     display: flex;
     justify-content: space-between;
     max-width: 1152px;
@@ -432,18 +439,21 @@ main {
     flex-wrap: wrap;
     padding: 25px 0px;
 }
-.clients-logobar div{
+
+.clients-logobar div {
     width: 48px;
     height: 48px;
 }
-.clients-logobar div img{
+
+.clients-logobar div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 @media screen and (max-width: 1024px) {
     .clients {
-        padding: 45px 55px;
+        padding: 0px 55px;
         gap: 25px;
     }
 
@@ -460,11 +470,188 @@ main {
 
 @media screen and (max-width: 768px) {
     .clients {
-        padding: 30px 25px;
+        padding: 0px 25px;
         gap: 15px;
     }
-    .clients-logobar{
+
+    .clients-logobar {
         gap: 20px;
         padding: 10px 0px;
+    }
+}
+
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.community-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.community-text h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600px;
+    color: #4D4D4D;
+    max-width: 542px;
+}
+
+.community-text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #717171;
+    width: 100%;
+}
+
+.community-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 0px 144px;
+}
+
+.membership-organisations {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    border-radius: 8px;
+    width: 299px;
+    height: 260px;
+    gap: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    background-color: #FFFFFF;
+}
+
+.national-associations {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    border-radius: 8px;
+    width: 299px;
+    height: 280px;
+    gap: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    background-color: #FFFFFF;
+}
+
+.clubs-and-groups {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    border-radius: 8px;
+    width: 299px;
+    height: 260px;
+    gap: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    background-color: #FFFFFF;
+}
+
+.card-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 235px;
+    height: 144px;
+    gap: 16px;
+}
+
+.card-member-img {
+    width: 65px;
+    height: 56px;
+}
+
+.card-member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-member p {
+    text-align: center;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #4D4D4D;
+}
+
+.card-p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+}
+
+@media screen and (max-width: 1024px) {
+    .community {
+        padding: 0px 55px;
+        gap: 16px;
+    }
+
+    .community-text h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .community-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .community-cards {
+        justify-content: center;
+        padding: 0px 0px;
+        gap: 16px;
+    }
+
+    .membership-organisations {
+        padding: 24px 28px;
+        width: 294px;
+    }
+
+    .national-associations {
+        padding: 24px 28px;
+        width: 294px;
+    }
+
+    .clubs-and-groups {
+        padding: 24px 28px;
+        width: 294px;
+    }
+
+    .card-member {
+        width: 227px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .community {
+        padding: 0px 25px;
+        gap: 10px;
+    }
+
+    .community-cards {
+        gap: 20px;
+    }
+
+    .community-text h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .card-member p {
+        font-size: 24px;
+        line-height: 32px;
     }
 }
