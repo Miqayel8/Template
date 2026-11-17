@@ -792,6 +792,7 @@ main {
     width: 100%;
     gap: 30px;
     padding: 64px 144px;
+    background-color: #F5F7FA;
 }
 
 .helping-busines-text {
@@ -866,7 +867,7 @@ main {
 
 @media screen and (max-width: 1024px) {
     .helping-busines {
-        padding: 0px 55px;
+        padding: 15px 55px;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
@@ -919,7 +920,7 @@ main {
 
 @media screen and (max-width: 768px) {
     .helping-busines {
-        padding: 0px 25px;
+        padding: 15px 25px;
     }
 
     .helping-busines-text h2 {
@@ -1059,5 +1060,162 @@ main {
 
     .calender-content-text p {
         color: #18191F;
+    }
+}
+
+.costumers {
+    display: flex;
+    align-items: center;
+    padding: 32px 144px;
+    width: 100%;
+    gap: 30px;
+    background-color: #F5F7FA;
+    justify-content: space-between;
+}
+
+.costumers-img {
+    width: 326px;
+    height: 326px;
+}
+
+.costumers-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.costumers-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 748px;
+}
+
+.costumers-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 748px;
+}
+
+.costumers-content-text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #717171;
+    max-width: 700px;
+}
+
+.costumers-content-text-tim {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.costumers-content-text-tim p:first-child {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #4CAF4F;
+}
+
+.costumers-content-text-tim p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #89939E;
+}
+
+.costumers-logo-meet-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.costumers-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 493px;
+    justify-content: space-between;
+}
+
+.costumers-logo div {
+    width: 48px;
+    height: 48px;
+}
+
+.costumers-logo div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.costumers-logo-meet-all a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #4CAF4F;
+    width: 220px;
+    padding: 8px 5px;
+}
+
+.costumers-logo-meet-all a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .costumers {
+        padding: 15px 55px;
+    }
+
+    .costumers-img {
+        width: 268px;
+    }
+
+    .costumers-content {
+        gap: 15px;
+        max-width: 600px;
+    }
+
+    .costumers-content-text p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 450;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .costumers {
+        padding: 15px 25px;
+        justify-content: center;
+    }
+
+    .costumers-img {
+        display: none;
+    }
+
+    .costumers-logo {
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .costumers-logo-meet-all a {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 550;
+        width: 205px;
+    }
+
+    .costumers-logo div {
+        width: 40px;
+        height: 40px;
     }
 }
